@@ -56,7 +56,7 @@ typedef struct alumno_s * alumno_t;
 /* === Public function declarations ================================================================================ */
 
 /**
- * @brief Fucnion publica para crear una instancia de un alumno.
+ * @brief Funcion publica para crear una instancia de un alumno.
  * @param apellido   Cadena de caracteres con el apellido del alumno.
  * @param nombre     Cadena de caracteres con el nombre del alumno.
  * @param documento  Numero entero con el documento del alumno.
@@ -65,7 +65,7 @@ typedef struct alumno_s * alumno_t;
 alumno_t AlumnoCrear(const char * apellido, const char * nombre, int documento);
 
 /**
- * @brief transfroma los datos del alumno a un texto JSON.
+ * @brief transforma los datos del alumno a un texto JSON.
  * @param alumno   Puntero a la estructura con los datos del alumno.
  * @param cadena   Cadena de caracteres para generar el resultado.
  * @param espacio  Cantidad de bytes disponibles en la cadena de resultado.

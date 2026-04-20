@@ -64,7 +64,7 @@ static int SerializarNumero(const char * clave, int valor, char * cadena, size_t
 /* === Private function definitions ============================================================ */
 
 /**
- * @brief Funcion interna paara serializar un campo de texto en formato JSON.
+ * @brief Funcion interna para serializar un campo de texto en formato JSON.
  * @param clave   Nombre del campo.
  * @param cadena  Arreglo donde se guardara el texto resultante.
  * @param espacio Cantidad de bytes disponibles en el arreglo.
@@ -77,10 +77,10 @@ static int SerializarTexto(const char * clave, const char * valor, char * cadena
 /**
  * @brief Funcion interna para serializar un campo numerico en formato JSON.
  * @param clave   Nombre del campo.
- * @param valor   Numero entero a gaurdar.
+ * @param valor   Numero entero a guardar.
  * @param cadena  Arreglo donde se guardara el texto resultante.
  * @param espacio Cantidad de bytes disponibles en el arreglo.
- * @return        La cantidad dde carcteres escritos.
+ * @return        La cantidad dde caracteres escritos.
  */
 static int SerializarNumero(const char * clave, int valor, char * cadena, size_t espacio) {
     return snprintf(cadena, espacio, "\"%s\":%d", clave, valor);
